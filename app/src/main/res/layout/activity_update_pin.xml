@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Change Pin"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50sp" />
+
+
+        <EditText
+            android:id="@+id/old_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Enter Old PIN"
+            android:inputType="numberPassword"
+            android:shadowColor="@color/colorPrimary"
+            android:singleLine="true"
+            android:textColorHint="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/new_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Enter New PIN"
+            android:inputType="numberPassword"
+            android:shadowColor="@color/colorPrimary"
+            android:singleLine="true"
+            android:textColorHint="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/confirm_new_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Confirm New PIN"
+            android:inputType="numberPassword"
+            android:shadowColor="@color/colorPrimary"
+            android:singleLine="true"
+            android:textColorHint="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/change_pin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:onClick="updatePIN"
+            android:text="Update"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="@color/colorAccent" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

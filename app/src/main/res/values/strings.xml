@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Entrepreneurs</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activate">Sign In</string>
+    <string name="activate_title">Activate</string>
+    <string name="group_name">Entrepreneurs</string>
+    <string name="unlock_image_desc">Unlock</string>
+    <string name="enter_activation_code">Enter Activation Code</string>
+    <string name="button_label">Activate</string>
+    <string name="attempts_remaining">Attempts Remaining:</string>
+    <string name="remaining_attempts">Remaining Attempts: </string>
+    <string name="default_remaining_attempts">3</string>
+    <string name="code_is_empty">Code is empty</string>
+    <string name="welcome">Welcome</string>
+    <string name="invalid_code">Invalid Code</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

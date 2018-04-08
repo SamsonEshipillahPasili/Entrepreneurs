@@ -1,0 +1,397 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- A CardView that contains the personal progress of a person-->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            card_view:cardBackgroundColor="@color/cardview_light_background"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/member_1_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Samson E."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Amount"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/member_1_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Ksh. 500"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Target"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/member_1_target"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Ksh 40000"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Percentage"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/member_1_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="10%"
+                        android:textColor="?android:attr/colorFocusedHighlight"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/member_1_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="56" />
+
+                <Button
+                    android:id="@+id/member_1_payment_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:elevation="0dp"
+                    android:text="PAYMENT HISTORY"
+                    android:onClick="viewPaymentHistory"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            card_view:cardBackgroundColor="@color/cardview_light_background"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/member_2_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Joshua O."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Amount"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/member_2_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Ksh. 500"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView82"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Target"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/member_2_target"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Ksh 40000"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView92"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Percentage"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/member_2_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="10%"
+                        android:textColor="?android:attr/colorFocusedHighlight"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/member_2_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="56" />
+
+                <Button
+                    android:id="@+id/member_2_payment_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:text="PAYMENT HISTORY"
+                    android:onClick="viewPaymentHistory"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            card_view:cardBackgroundColor="@color/cardview_light_background"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/member_3_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Amref O."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Amount"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/member_3_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Ksh. 500"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView83"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Target"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/member_3_target"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Ksh 40000"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView93"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Percentage"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/member_3_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="10%"
+                        android:textColor="?android:attr/colorFocusedHighlight"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/member_3_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="56" />
+
+                <Button
+                    android:id="@+id/member_3_payment_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:text="PAYMENT HISTORY"
+                    android:onClick="viewPaymentHistory"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

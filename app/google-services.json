@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "430771300315",
+    "firebase_url": "https://entrepreneurs2-9e4f0.firebaseio.com",
+    "project_id": "entrepreneurs2-9e4f0",
+    "storage_bucket": "entrepreneurs2-9e4f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430771300315:android:c238094e58f5f681",
+        "android_client_info": {
+          "package_name": "com.entrepreneurs.entrepreneurs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430771300315-77u41sdeoceilinahkv5njaneg7qqjrq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.entrepreneurs.entrepreneurs",
+            "certificate_hash": "dfc1c27e245be26828dd90f52726b4b5e850cf24"
+          }
+        },
+        {
+          "client_id": "430771300315-v9fo1d92msr3khspbrd5rfaglt68jj50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF-tRYxf5pxstCegYMzJbtzTdIrwSdCQY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430771300315-v9fo1d92msr3khspbrd5rfaglt68jj50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
